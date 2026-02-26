@@ -202,7 +202,7 @@
                                FontFamily="Montserrat"                             
                                Margin="0,15,0,0"/>
 
-                    <customcontrols:BindablePasswordBox Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    <customcontrols:BindablePasswordBox x:Name="txtPassword" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                         Height="28"                            
                                                         Margin="0,5,0,0">
                     </customcontrols:BindablePasswordBox>

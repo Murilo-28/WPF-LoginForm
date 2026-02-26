@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -9,6 +10,7 @@ namespace WPF_LoginForm.Models
 {
     public interface IUserRepository
     {
+
         bool AuthenticateUser(NetworkCredential credential);
         void Add(UserModel userModel);
         void Edit(UserModel userModel);
@@ -16,6 +18,7 @@ namespace WPF_LoginForm.Models
         UserModel GetById(int id);
         UserModel GetByUsername(string username);
         IEnumerable<UserModel> GetByAll();
-        //...
+
+
     }
 }
